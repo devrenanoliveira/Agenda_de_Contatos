@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> <!--Adicionando a fonte desejada-->
+    <link rel="stylesheet" href="./main.css"> <!--linkando a fonte ao main.css-->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/Logo agenda contatos.jpg" alt="agenda para registro de contatos">
+            <h1>Agenda de contatos</h1>
+        </header>
+        <form id="form-contatos">
+            <input class="nome" type="text" id="nome-contato" required placeholder="Nome do contato" />
+            <input class="telefone" type="tel" id="tel-contato" required placeholder="Telefone do contato" />
+            <input class="email" type="email" id="email-contato" required placeholder="E-mail do contato" />
+            <button class="botao-add" type="submit" id="submit">Adicionar +</button>
+            <button class="botao-reset" type="reset" id="reset" >Apagar</button>
+        </form>
+        <table cellspacing="0"> <!--constrói a tabela--> <!--cellspacing retira o separador entre as células-->
+            <thead> <!--cabeçalbo da tabela-->
+                <tr> <!--linha para as tabelas "table row"-->
+                    <th> <!--header da tabela-->
+                        Nome do contato
+                    </th>
+                    <th>
+                        Telefone do contato
+                    </th>
+                    <th>
+                        E-mail do contato
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tabela-contatos"> <!--para adicionar o conteúdo da tabela-->
+                <!--<tr> *** ESSE <TR> FOI EXCLUÍDO PORQUE NÃO FAZIA MAIS SENTIDO USÁ-LO APÓS CRIAR AS LÓGICAS E JS ***
+                    <td>Atividade 1</td> aqui serve para criar a estrutura do que estará na célula de dados em uma tabela, em outras palavras, as colunas
+                    <td>7</td>
+                    <td><img src="./images/aprovado.png" alt="Emoji festejando" /></td>
+                </tr>-->
+            </tbody>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+    <footer>
+        Agenda de contatos eletrônica.
+        <br>
+        Desenvolvida por: Dev. Renan Oliveira. 
+        <br>
+        Link do GitHub: 
+        <a href="https://github.com/devrenanoliveira" target="blank">clique aqui</a>
+    </footer>
+</body>
+</html>
